@@ -36,7 +36,7 @@ credit ="Alex:)™~"
 OWNER = int(os.environ.get("OWNER", 7833842279)
 try: 
     ADMINS=[] 
-    for x in (os.environ.get("ADMINS", "7833842279").split()):  
+    for x in (os.environ.get("ADMINS", "7833842279,7833842279").split()):  
         ADMINS.append(int(x)) 
 except ValueError: 
         raise Exception("Your Admins list does not contain valid integers.") 
